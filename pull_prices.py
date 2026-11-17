@@ -3,10 +3,10 @@ from pathlib import Path   # handles file paths cleanly on any OS
 import gridstatus          
 from gridstatus import Markets
 
-DATE = "today"
-LOCATION = "HB_HOUSTON"
+DATE = "today"   #change to a recent date like "2026-11-16"
+LOCATION = "HB_HOUSTON"   #Houston Hub
 OUT_DIR = Path("data/raw")
-OUT_DIR.mkdir(parents=True, exist_ok=True)
+OUT_DIR.mkdir(parents = True, exist_ok = True)
 
 ercot = gridstatus.Ercot()
 
